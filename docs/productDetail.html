@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+
+    <header class="header">
+      <a href="#" class="logo"> <i class="fas fa-book-reader"></i> shop </a>
+
+      <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="#desProduct">introduce</a>
+        <a href="#shop">shop</a>
+        <a href="#footer">contact</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+
+      <form action="" class="login-form">
+        <h3>sign in</h3>
+        <input
+          type="email"
+          name=""
+          placeholder="enter your email"
+          id=""
+          class="box"
+        />
+        <input
+          type="password"
+          name=""
+          placeholder="enter your password"
+          id=""
+          class="box"
+        />
+        <div class="remember">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me">remember me</label>
+        </div>
+        <input type="submit" value="sign in" class="btn" />
+        <div class="links">
+          <a href="#">forget password</a>
+          <a href="#">sign up</a>
+        </div>
+      </form>
+    </header>
+
+    <div class="main-wrapper">
+      <div class="container">
+        <div class="product-div">
+          <div class="product-div-left">
+            <div class="img-container">
+              <img src="../image/product_01.jpg" alt="watch" />
+            </div>
+            <div class="hover-container">
+              <div><img src="../image/product_01.jpg" data-name="Khi mọi điều không như ý" /></div>
+              <div><img src="../image/product_02.jpg" data-name="Yêu những điều không hoàn hảo" /></div>
+              <div><img src="../image/product_03.jpg" data-name="ChatGPT thực chiến" /></div>
+              <div><img src="../image/product_04.jpg" data-name="Thuật thao túng tâm lý" /></div>
+              <div><img src="../image/product_05.jpg" data-name="Người đàn ông mang tên OVE" /></div>
+              <div><img src="../image/product_06.jpg" data-name="Thiên tài bên trái|Kẻ điên bên phải" /></div>
+              <div><img src="../image/product_07.jpg" data-name="Điềm tĩnh & nóng giận" /></div>
+              <div><img src="../image/product_08.jpg" data-name="Ghi chép pháp y" /></div>
+              <div><img src="../image/product_09.jpg" data-name="Tâm lý học tội phạm" /></div>
+              <div><img src="../image/product_10.jpg" data-name="Thao túng tâm lý" /></div>
+              <div><img src="../image/product_11.jpg" data-name="phải trái đúng sai" /></div>
+              <div><img src="../image/product_12.jpg" data-name="Lý thuyết trò chơi" /></div>
+            </div>
+          </div>
+          <div class="product-div-right">
+            <span class="product-name">Khi mọi điều không như ý</span>
+            <span class="product-price">$5.00 - $10.00</span>
+            <div class="product-rating">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star-half-alt"></i></span>
+              <span style=>(350 đánh giá)</span>
+            </div>
+
+            <div class="btn-groups">
+              <button type="button" class="add-cart-btn">
+                <i class="fas fa-shopping-cart"></i>add to cart
+              </button>
+              <button type="button" class="buy-now-btn">
+                <i class="fas fa-wallet"></i>buy now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+   
+    <!-- des product-->
+  <section class="desProduct" id="desProduct">
+    <div>
+      <button class= "btn-show-description active_btn" onclick="showDescription()">Mô tả</button>
+      <button class= "btn-show-reviews"onclick="showReviews()">Đánh giá</button>
+    </div>
+     
+    <div id="description"><h2 class="left-header">Thông tin  <span>sản phẩm</span></h2>
+      <div class="text_16" style="padding-left: 22px;">
+        <ul id="list"></ul>
+      </div>
+    </div>
+    <div id="reviews">
+        <ul class="reviews-list">
+        </ul>
+    </div>
+      
+    </section>
+
+    <section class="shop" id="shop">
+      <h1 class="heading">sản phẩm <span> của chúng tôi</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="../image/product_01.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Khi mọi điều không như ý</h3>
+            <div class="amount">5.00 - $10.00</div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="../image/product_02.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Yêu những điều không hoàn hảo</h3>
+            <div class="amount">$5.00 - $10.00</div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="../image/product_03.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>ChatGPT thực chiến</h3>
+            <div class="amount">$5.00 - $10.00</div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="../image/product_04.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Thuật Thao túng</h3>
+            <div class="amount">$5.00 - $10.00</div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="../image/product_05.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Người đàn ông mang tên OVE</h3>
+            <div class="amount">$5.00 - $10.00</div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="../image/product_06.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Thiên tài bên trái|Kẻ điên bên phải</h3>
+            <div class="amount">$5.00 - $10.00</div>
+          </div>
+        </div>    
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="../image/product_07.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Điềm tĩnh & nóng giận</h3>
+            <div class="amount">$5.00 - $10.00</div>
+          </div>
+        </div>  
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="../image/product_08.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Ghi chép pháp y</h3>
+            <div class="amount">$5.00 - $10.00</div>
+          </div>
+        </div>   
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="../image/product_09.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Tâm lý học tội phạm</h3>
+            <div class="amount">$5.00 - $10.00</div>
+          </div>
+        </div>  
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="../image/product_10.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Thao túng tâm lý</h3>
+            <div class="amount">$5.00 - $10.00</div>
+          </div>
+        </div>   
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="../image/product_11.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>phải trái đúng sai</h3>
+            <div class="amount">$5.00 - $10.00</div>
+          </div>
+        </div> 
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="../image/product_12.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Lý thuyết trò chơi</h3>
+            <div class="amount">$5.00 - $10.00</div>
+          </div>
+        </div>             
+      </div>
+    </section>
+
+    <section class="footer" id="footer">
+      <img src="../image/top_wave.png" alt="" />
+
+      <div class="share">
+        <a href="#" class="btn"> <i class="fab fa-facebook-f"></i> facebook </a>
+        <a href="#" class="btn"> <i class="fab fa-twitter"></i> twitter </a>
+        <a href="#" class="btn"> <i class="fab fa-instagram"></i> instagram </a>
+        <a href="#" class="btn"> <i class="fab fa-linkedin"></i> linkedin </a>
+        <a href="#" class="btn"> <i class="fab fa-pinterest"></i> pinterest </a>
+      </div>
+
+      <div class="credit">
+        created by <span> mr.Thien </span> | all rights reserved!
+      </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/productdetail.js"></script>
+  </body>
+</html>
